@@ -1,5 +1,5 @@
 <script lang="ts">
-    import Carousel from '../Carousel.svelte';
+    import Carousel from '$components/J&C2/Carousel.svelte';
   
     const testimonials = [
       {
