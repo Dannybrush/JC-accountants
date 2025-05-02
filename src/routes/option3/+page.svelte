@@ -1,8 +1,8 @@
 <script lang="ts">
     import type { PageData } from './$types';
     import {Header, Hero, AboutUs, Services, Testimonials, Footer} from '$components/J&C';
-    import '$lib/styles/J&C.css';
-    import Carousel from '$components/templates/Carousel.svelte';
+    import '$styles/J&C.css';
+    import Carousel from '$components/J&C2/Carousel.svelte'
 
     let { data }: { data: PageData } = $props();
 
