@@ -4,7 +4,7 @@
   
   <header>
     <div class="logo">
-      <img src="J&C/logo.png" 
+      <img src="JC/logo.png" 
       alt="J&C Logo" 
       class="logo-img"  
       />

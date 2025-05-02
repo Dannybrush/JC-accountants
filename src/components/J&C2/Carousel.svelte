@@ -1,6 +1,6 @@
 <script>
   let slides = [
-    { image: '/J&C/hero.webp', caption: 'Slide 1' },
+    { image: '/JC/hero.webp', caption: 'Slide 1' },
     { image: '/placeholder-team-pic_small.jpg', caption: 'Slide 2' },
     { image: '/VetPracticePlaceholder.jpg', caption: 'Slide 3' },
   ];
