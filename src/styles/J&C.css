@@ -1,0 +1,48 @@
+/* global.css */
+
+:root {
+  --primary-color: rgb(92,21,26); /*#720404;*/  /* Dark Burgundy Red */ 
+  --secondary-color: #9C0A0A; /* Darker Red */
+  --accent-color: #F5F5F5; /* Light Gray */
+  --text-color: #333; /* Dark text */
+  --background-color: #fff; /* White background */
+  --heading-font: 'Poppins', sans-serif; /* Professional font */
+  --body-font: 'Roboto', sans-serif; /* Readable body font */
+  --border-radius: 8px; /* Soft border radius */
+  --transition-duration: 0.3s; /* Smooth transition for hover effects */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color var(--transition-duration);
+}
+
+a:hover {
+  color: var(--secondary-color);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

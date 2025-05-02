@@ -1,0 +1,16 @@
+:root {
+    --brand-color: rgb(92, 21, 26);
+    --text-dark: #1a1a1a;
+    --bg-light: #f9f9f9;
+    --border-radius: 0.75rem;
+    --transition: 0.3s ease-in-out;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    color: var(--text-dark);
+    scroll-behavior: smooth;
+  }
+  
