@@ -65,7 +65,7 @@
     color: #555;
   }
 
-  .company {
+  .company{
     color: var(--primary-color);
     font-weight: 600;
   }
