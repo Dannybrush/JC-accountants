@@ -1,25 +1,32 @@
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
-	// Consult https://svelte.dev/docs/kit/integrations
-	// for more information about preprocessors
 	preprocess: vitePreprocess(),
-
 	kit: {
-		// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
-		// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
-		// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-		adapter: adapter(),
-		alias: {
-			$components: 'src/components',
-			$lib: 'src/lib',
-			$stores: 'src/stores',
-			$utils: 'src/utils',
-			$routes: 'src/routes',
-			$styles: 'src/styles'
-		},	
+		// The Vercel adapter needs symlinks, which Windows blocks without Developer Mode; locally we
+		// only need `vite build` + `vite preview`, so it runs on Vercel's (Linux) build machines only.
+		adapter: process.env.VERCEL ? adapter({ runtime: 'nodejs22.x', regions: ['lhr1'] }) : { name: 'local-preview', adapt() {} },
+		prerender: {
+			handleHttpError: 'fail',
+			handleMissingId: 'fail'
+		},
+		csp: {
+			mode: 'hash',
+			directives: {
+				'default-src': ['self'],
+				'script-src': ['self', 'https://www.googletagmanager.com'],
+				'style-src': ['self', 'unsafe-inline'],
+				'img-src': ['self', 'data:', 'https://www.googletagmanager.com', 'https://*.google-analytics.com'],
+				'connect-src': ['self', 'https://*.google-analytics.com', 'https://*.analytics.google.com', 'https://www.googletagmanager.com'],
+				'frame-src': ['https://www.google.com'],
+				'font-src': ['self'],
+				'base-uri': ['self'],
+				'form-action': ['self'],
+				'object-src': ['none']
+			}
+		}
 	}
 };
 

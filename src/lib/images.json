@@ -1,0 +1,40 @@
+{
+	"clifford-rumble": {
+		"width": 900,
+		"height": 1100,
+		"widths": [
+			480,
+			900
+		],
+		"blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoUABgAPu1mpk2ppiOiMBgMATAdiWMAADxDHm9407Nbf1XIAP7sZcIsbtalrofcn6XphpLSVk3R16lRoshY9K6BVHACQZSZVAAAAA=="
+	},
+	"joanne-wilson": {
+		"width": 900,
+		"height": 1100,
+		"widths": [
+			480,
+			900
+		],
+		"blur": "data:image/webp;base64,UklGRlwAAABXRUJQVlA4IFAAAADwAwCdASoUABgAPu1mpk2ppiOiMBgMATAdiWMAADxDHm9407Nbf1XIAP7sZcIsbtalrofcn6XphpLSVk3R16lRoshY9K6BVHACQZSZVAAAAA=="
+	},
+	"office": {
+		"width": 1600,
+		"height": 1100,
+		"widths": [
+			480,
+			960,
+			1600
+		],
+		"blur": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAwCdASoUAA4APu1iqk2ppaQiMAgBMB2JQBOgBDd2gh41iSCePIAA/tNRLw/sBpYn3WkQWtCqvANkhyt8oCC8uqAAAA=="
+	},
+	"team": {
+		"width": 1800,
+		"height": 1100,
+		"widths": [
+			480,
+			960,
+			1600
+		],
+		"blur": "data:image/webp;base64,UklGRk4AAABXRUJQVlA4IEIAAABwAwCdASoUAAwAPu1kqk2ppaQiMAgBMB2JQBYdhDVBw25P+AAA/tNRMDE54ycMBnJ+kbXIlQ6LtkqqlTJYLDAAAAA="
+	}
+}

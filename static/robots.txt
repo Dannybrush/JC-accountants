@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /contact/thank-you
+
+Sitemap: https://jandc-accountants.co.uk/sitemap.xml

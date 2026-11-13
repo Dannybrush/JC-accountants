@@ -9,22 +9,22 @@
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch"
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"images": "node scripts/images.mjs"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-auto": "^6.0.0",
-		"@sveltejs/kit": "^2.16.0",
+		"@sveltejs/adapter-vercel": "^6.3.5",
+		"@sveltejs/kit": "^2.70.4",
 		"@sveltejs/vite-plugin-svelte": "^5.0.0",
-		"@tailwindcss/forms": "^0.5.9",
-		"@tailwindcss/typography": "^0.5.15",
-		"@tailwindcss/vite": "^4.0.0",
-		"svelte": "^5.0.0",
+		"sharp": "^0.35.5",
+		"svelte": "^5.57.3",
 		"svelte-check": "^4.0.0",
-		"tailwindcss": "^4.0.0",
 		"typescript": "^5.0.0",
 		"vite": "^6.2.6"
 	},
 	"dependencies": {
+		"@fontsource-variable/inter": "^5.3.0",
+		"@fontsource-variable/source-serif-4": "^5.3.1",
 		"lucide-svelte": "^0.506.0"
 	}
 }
